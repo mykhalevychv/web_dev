@@ -1,0 +1,626 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>lab5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./s.css">
+<style>
+
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="mon.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>the best time Lorem ipsum  at Venice lorem ipsum !</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="hel.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="building.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Lorem ipsum lorem ipsum</h3>
+      <p><b>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <p class="w3-opacity"><i>Lorem ipsum dolor</i></p>
+    <p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="t.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="p.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="light.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="r.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="b.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="light.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<div style="padding-top:40px;"></div>
+
+<div class="small-container" style="padding-bottom: 30px; width:600px; margin:auto;text-align: center;">
+  <h1 style="padding-bottom: 30px;">HTML Web Storage</h1>
+
+  <form action="submit.html">
+    <input type="submit" value="Go to page" />
+  </form>
+</div>
+
+<script src="func.js"></script>
+<div>
+<h1 style="padding-top: 100px; padding-bottom: 30px; margin-left:600px; width:300px">Web Worker</h1>
+
+
+<div class="timer" id="timer"style=" padding-bottom: 50px; margin:auto;width:200px; font-size:60px">00:00</div>
+<div class="buttons" style="padding-bottom: 30px; margin-left:550px;width:900px;">
+  <button class="btn btn-black" onclick="startTimer()" id="button1">Start</button>
+  <button class="btn btn-black"  onclick="stopTimer()" id = "button2">Stop</button>
+</div>
+</div>
+<script>
+  var w = null; // initialize variable
+  // function to start the timer
+  function startTimer()
+  {
+    // First check whether Web Workers are supported
+    if (typeof(Worker)!=="undefined"){
+      // Check whether Web Worker has been created. If not, create a new Web Worker based on the Javascript file simple-timer.js
+      if (w==null){
+        w = new Worker("timer.js");
+      }
+      // Update timer div with output from Web Worker
+      w.onmessage = function (event) {
+        document.getElementById("timer").innerHTML = event.data;
+      };
+    } else {
+      // Web workers are not supported by your browser
+      document.getElementById("timer").innerHTML = "Sorry, your browser does not support Web Workers ...";
+    }
+  }
+  // function to stop the timer
+  function stopTimer()
+  {
+    w.terminate();
+    timerStart = true;
+    w = null;
+  }
+</script>
+
+
+
+
+
+
+
+<div class="aj" style="margin:auto; text-align: center; padding-top:150px">
+  <h1>AJAX</h1>
+  <div class="ajax_container">
+    <h2 id="blue" class="ajax_item">test_url: https://httpbin.org/get</h2>
+    <form class="ajax_item" name="ajax_form">
+      Endpoint: <input id="data_url" type="text" name="data_url" value="https://httpbin.org/get">
+    </form>
+    <div class="ajax_item">
+      <button class="btn btn-black" onclick="get_ajax('text')">Request_text</button>
+      <button class="btn btn-black" onclick="get_ajax('status')">Request_text</button>
+      <button class="btn btn-black" onclick="get_ajax('headers')">Request_text</button>
+
+
+    </div>
+    <div class="ajax_item" id="aj_cont"></div>
+  </div>
+</div>
+<script>
+  function get_ajax(data_type) {
+    data_url = document.forms["ajax_form"]["data_url"].value;
+    if (data_url === "") {
+      alert("data_url must be filled out");
+      return false;
+    }
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        if (data_type === 'text') {
+          document.getElementById('aj_cont').innerHTML = this.responseText;
+        } else if (data_type === 'status') {
+          document.getElementById('aj_cont').innerHTML = this.statusText;
+        } else if (data_type === 'headers') {
+          document.getElementById('aj_cont').innerHTML = this.getAllResponseHeaders();
+        }
+      }
+    };
+    xhttp.open("GET", data_url, true);
+    xhttp.send();
+    return xhttp.responseText;
+  }
+</script> <br>
+
+
+
+
+
+<div style="margin:auto; text-align: center; padding-top:150px">
+<!--- JQuery Hide/Show FadeIn/Out -->
+<div class="ptag">
+
+  <h1>JQuery Hide/Show</h1>
+  <div>
+    <button id="hide1" style="margin-bottom: 10px">Hide</button>
+    <button id="show1" style="margin-bottom: 10px">Show</button>
+  </div>
+  <img id="toggle" src="stars.jpg" width="400" height="300">
+</div>
+<div class="ptag">
+  <h1>JQuery FadeIn/Out</h1>
+  <div>
+    <button id="fadeIn" style="margin-bottom: 10px">FadeIn</button>
+    <button id="fadeOut" style="margin-bottom: 10px">FadeOut</button>
+  </div>
+  <img id="toggle1" src="build.jpg" width="400" height="300">
+
+
+</div> <br>
+<!--- JQuery Slide Animate -->
+<div class="ptige">
+  <h1>JQuery Slide</h1>
+  <div>
+    <button id="flip" style="margin-bottom: 10px">Click to slide the image</button>
+  </div>
+  <img id="panel" src="stars.jpg" width="400" height="300">
+</div>
+<div class="ptag">
+  <h1>JQuery Animate</h1>
+  <div>
+    <button id="animate" style="margin-bottom: 10px">Animate</button>
+  </div>
+  <img id="animate1" src="stars.jpg" width="400" height="300">
+
+
+</div> <br>
+<!--- JQuery Stop Callback -->
+<div class="ptag">
+
+  <h1>JQuery Stop</h1>
+  <div>
+    <button id="stop" style="margin-bottom: 10px">Click to stop the animation</button>
+    <button id="start" style="margin-bottom: 10px">Click to start the animation</button>
+  </div>
+
+</div>
+<div class="ptag">
+  <h1>JQuery Callback</h1>
+  <div>
+    <button id="callback" style="margin-bottom: 10px">Callback</button>
+  </div>
+  <img id="callback1" src="stars.jpg" width="400" height="300">
+
+</div> <br>
+<!--- JQuery StopChaining -->
+<div class="ptag">
+
+  <h1>JQuery Chaining</h1>
+  <div>
+    <button id="chain" style="margin-bottom: 10px">Start chaining</button>
+  </div>
+  <img id="chain1" src="stars.jpg" width="400" height="300">
+</div>
+
+<script>
+  $(document).ready(function() {
+    $("#hide1").click(function() {
+      $("#toggle").hide();
+    });
+    $("#show1").click(function() {
+      $("#toggle").show();
+    });
+  });
+  $(document).ready(function() {
+    $("#fadeIn").click(function() {
+      $("#toggle1").fadeIn("slow");
+    });
+    $("#fadeOut").click(function() {
+      $("#toggle1").fadeOut("slow");
+    });
+  });
+  $(document).ready(function() {
+    $("#flip").click(function() {
+      $("#panel").slideToggle("slow");
+    });
+  });
+  $(document).ready(function() {
+    $("#animate").click(function() {
+      var animation = $("#animate1");
+      animation.animate({ height: '50vh', opacity: '0.4' }, "slow");
+      animation.animate({ width: '75vh', opacity: '0.8' }, "slow");
+      animation.animate({ height: '35vh', opacity: '0.4' }, "slow");
+      animation.animate({ width: '50vh', opacity: '0.8' }, "slow");
+    });
+  });
+  $(document).ready(function() {
+    $("#start").click(function() {
+      $("#stop1").slideDown(4000);
+    });
+    $("#stop").click(function() {
+      $("#stop1").stop();
+    });
+  });
+  $(document).ready(function() {
+    $("#callback").click(function() {
+      $("#callback1").hide("slow", function() {
+        alert("The image is now hidden");
+      });
+    });
+  });
+  $(document).ready(function() {
+    $("#chain").click(function() {
+      $("#chain1").slideUp(2000).slideDown(2000);
+    });
+  });
+</script>
+<br>
+
+</div>
+
+<!--- jQuery + AJAX + JSON -->
+<div class="jAj">
+  <h1>jQuery + AJAX + JSON</h1>
+  <div class="json_content">
+    <a id="get_ip"><button style="margin-bottom: 10px">Get IP</button></a>
+    <div id="ip_div"></div>
+    <a id="get_headers"><button style="margin-bottom: 10px">Get headers</button></a>
+    <div id="headers_div"></div>
+    <a id="get_date"><button style="margin-bottom: 10px">Get date</button></a>
+    <div id="date_div"></div>
+    <a id="get_echo"><button style="margin-bottom: 10px">Get echo</button></a>
+    <div id="echo_div"></div>
+    <a id="get_valid"><button style="margin-bottom: 10px">Get validation</button></a>
+    <div id="valid_div"></div>
+    <a id="get_js_code"><button style="margin-bottom: 10px">Get js_code</button></a>
+    <div id="js_code_div"></div>
+    <a id="get_md5"><button style="margin-bottom: 10px">Get md5</button></a>
+    <div id="md5_div"></div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $("#get_ip").click(function() {
+      $.ajax({
+        url: "http://ip.jsontest.com/",
+        success: function(result) {
+          console.log(result);
+          $("#ip_div").text(result.ip);
+        }
+      });
+    });
+    $("#get_headers").click(function() {
+      $.ajax({
+        url: "http://headers.jsontest.com/",
+        success: function(result) {
+          console.log(result);
+          $("#headers_div").text(result["Accept-Language"]);
+        }
+      });
+    });
+    $("#get_date").click(function() {
+      $.ajax({
+        url: "http://date.jsontest.com",
+        success: function(result) {
+          console.log(result);
+          $("#date_div").text(result["date"]);
+        }
+      });
+    });
+    $("#get_echo").click(function() {
+      $.ajax({
+        url: "http://echo.jsontest.com/me/Liliia Ryvak/",
+        success: function(result) {
+          console.log(result);
+          $("#echo_div").text(result["me"]);
+        }
+      });
+    });
+    $("#get_valid").click(function() {
+      $.ajax({
+        url: 'http://validate.jsontest.com/?json={"key":"value"}',
+        success: function(result) {
+          console.log(result);
+          $("#valid_div").text(result["object_or_array"]);
+        }
+      });
+    });
+    $("#get_js_code").click(function() {
+      $.ajax({ url: 'http://code.jsontest.com', dataType: 'jsonp' });
+    });
+    $("#get_md5").click(function() {
+      $.ajax({
+        url: 'http://md5.jsontest.com/?text=example_text',
+        success: function(result) {
+          console.log(result);
+          res = JSON.stringify(result);
+          $("#md5_div").text(res);
+        }
+      });
+    });
+  });
+</script>
+
+
+<a href="#" class="float">
+
+<i class="fa fa-phone my-float"></i>
+</a>
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- Drag & Drop -->
+
+<h3 style = "font-weight: bold; text-align: center;   margin: 3% auto">Drag and Drop</h3>
+<section class="drag_drop">
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag1" src="rb.jpg" style=" height:150px;   width: 200px;" draggable="true" ondragstart="drag(event)">
+  </div>
+  
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+</section>
+<br>
+
+<!-- End Page Content -->
+</div>
+<!-- Image of location/map -->
+<img src="skyy.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+
+<script>
+  function validateEmail(ml) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(ml).toLowerCase());
+  }
+  function inputAlphabet(inputtext){
+    var alphaExp = /^[A-Za-z\s]+$/;
+    return alphaExp.test(String(inputtext).toLowerCase());
+  }
+  function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["email"].value;
+    var z = document.forms["myForm"]["message"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    if (y == "") {
+      alert("Email must be filled out");
+      return false;
+    }
+    if (z == "") {
+      alert("Message must be filled out");
+      return false;
+    }
+    if (!(validateEmail(y))) {
+      alert("Email is not valid");
+      return false;
+    }
+    if((x.length) < 4){
+      alert("Name must be longer than 3 symbols");
+      return false;
+    }
+    if(!(inputAlphabet(x))){
+      alert("Name can include only alphanumeric character");
+      return false;
+    }
+    return false;
+  }
+</script>
+
+
+
+<script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+
+
+</body>
+</html>
