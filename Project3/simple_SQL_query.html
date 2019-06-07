@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Project 3</title>
+    <style>
+
+body {
+      background-image:url('night.jpeg');
+      background-repeat:no-repeat; 
+      background-size: cover;
+      font-family: "Affogato Regular", sans-serif;
+      color: #1A1A1C;
+      text-align: left;
+    } 
+    form {
+      width: 450px;
+      margin: 10% auto;
+    }
+    .header {
+      padding: 1%;
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: capitalize;
+      letter-spacing: 5px;
+      text-align: left;
+    }
+
+    .input {
+      display: flex;
+      align-items: center;
+    }
+    .button {
+      height: 40px;
+      border: none;
+    }
+    #name {
+      width: 70%;
+      background: #FDFCFB;
+      font-family: inherit;
+      color: #737373;
+      letter-spacing: 1px;
+      text-indent: 5%;
+      border-radius: 5px 0 0 5px;
+    }
+    #submit {
+      width: 70%;
+      height: 46px;
+      background: #1A1A1C;
+      font-family: inherit;
+      font-weight: bold;
+      color: #FDFCFB;
+      letter-spacing: 1px;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      transition: background .3s ease-in-out;
+    }
+    #submit:hover {
+      background: rgb(197, 189, 191);
+    }
+    input:focus {
+      outline: none;
+      outline: 2px solid rgb(197, 189, 191);
+      box-shadow: 0 0 2px rgb(153, 149, 150);
+    }
+
+</style>
+</head>
+<body>
+ <iframe src="menu.html" width="100%" style="height: 100px; border:0; "></iframe>
+ <div class="header">
+<form action="connect.php" method="post">
+ MySQL_server:
+  <input type="text" class="button" name="DB" value="localhost"><br>
+ MySQL_user: 
+    <input type="text" class="button" name="DBuser"><br>
+ MySQL_password:
+  <input type="text" class="button" name="DBpass"><br>
+  <input type="submit" class="button" id="submit" value="Run SQL query">
+</form></div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
